@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <title>COVID-19 TRACKER</title>
+    <style>
+        body {
+            background-color: #c1c1c1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <div class="total_case_box mainheading">
+                    <h2>Total Cases</h2>
+                    <p id="total_cases"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="card col-lg-3 col-sm-6 col-xs-12 bg-darker text-white zoo"
+                style="width: 18rem; border: 0px;">
+                <div class="card-body boxer tdeath">
+                    <img src="https://www.mohfw.gov.in/assets/images/icon-death.png" />
+                    <p id="total_death"> </p>
+                    <h2>Total Death</h2>
+                </div>
+            </div>
+            <div class="card col-lg-3 col-sm-6 col-xs-12 bg-darker text-white zoo"
+                style="width: 18rem; border: 0px;">
+                <div class="card-body boxer trecov">
+                    <img src="https://www.mohfw.gov.in/assets/images/icon-active.png" />
+                    <p id="total_recovered"> </p>
+                    <h2>Total Recovery</h2>
+                </div>
+            </div>
+            <div class="card col-lg-3 col-sm-6 col-xs-12 bg-darker text-white zoo"
+                style="width: 18rem; border: 0px;">
+                <div class="card-body boxer ncase">
+                    <img src="https://www.mohfw.gov.in/assets/images/icon-infected.png" />
+                    <p id="new_case"> </p>
+                    <h2>New case</h2>
+                </div>
+            </div>
+            <div class="card col-lg-3 col-sm-6 col-xs-12 bg-darker text-white zoo"
+                style="width: 18rem; border: 0px;">
+                <div class="card-body boxer ndeath">
+                    <img src="https://www.mohfw.gov.in/assets/images/icon-inactive.png" />
+                    <p id="new_death"> </p>
+                    <h2>New Death</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <table id="countries_stat" class="table table-hover">
+                <tr>
+                    <th>Country</th>
+                    <th>Cases</th>
+                    <th>Deaths</th>
+                    <th>serious critical</th>
+                    <th>total recovered</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="container-fluid bottom-footer fixed-bottom">
+        <div class="row">
+            <div class="col-12 bg-dark text-white text-center">
+                <p>Copyright © 2020 - All rights reserved </p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
